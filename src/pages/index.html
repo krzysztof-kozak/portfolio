@@ -15,14 +15,124 @@
       content="https://krzysztof-kozak.github.io/portfolio/"
     />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content=""
-    />
+    <meta property="og:image" content="" />
   </head>
   <body>
-    <h1>
-      Portfolio
-    </h1>
+    <main>
+      <section class="hero">
+        <img src="#" alt="Kris" class="hero__img" />
+        <span class="hero__greeting">Hiya 👋</span>
+        <h1 class="hero__header">
+          I'm Kris and I am programming bootcamp graduate with html, css,
+          <span class="accent">javascript</span> and
+          <span class="accent">react</span>.
+        </h1>
+        <p class="hero__text">
+          You might be interested in checking the list of my
+          <span class="accent">skills</span>. Don’t forget to have a glimpse at
+          my <span class="accent">project</span>. Currently I’m working as a
+          junior frontend dev but feel free to
+          <span class="accent">contact me</span> if you want to share a an
+          opportunity or just talk 😊
+        </p>
+        <a class="hero__contact" href="mailto:krzysztofkoz6@gmail.com"
+          >krzysztofkoz6@gmail.com</a
+        >
+      </section>
+
+      <section class="skills">
+        <h2 class="skills__header">
+          My Skills
+        </h2>
+
+        <article class="skills">
+          <h3 class="skills__header">Working knowledge</h3>
+          <ul class="list">
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hi</li>
+          </ul>
+        </article>
+
+        <article class="skills">
+          <h3 class="skills__header">Know something about</h3>
+          <ul class="list">
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hi</li>
+          </ul>
+        </article>
+
+        <article class="skills">
+          <h3 class="skills__header">Want to learn</h3>
+          <ul class="list">
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hello</li>
+            <li class="list__item">Hi</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="projects">
+        <h2 class="projects__header">Recent projects</h2>
+        <p class="projects__text">
+          I started my frontend developer path in 2003. Since then, I’ve built
+          some projects. Here’s the list of the things I’ve done so far.
+        </p>
+        <div class="grid-container">
+          <article class="project">
+            <h3 class="project__header">
+              <span>project:</span> <span>name</span>
+            </h3>
+            <p><span>description:</span> <span>text text text</span></p>
+            <p>
+              <span>demo:</span>
+              <span>&lt;<a href="#" title="name - demo">see_here</a>&gt; </span>
+            </p>
+            <p>
+              <span>github:</span>
+              <span>
+                &lt;<a href="#" title="github - sourcecode">source_code</a>&gt;
+              </span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__header">
+          Contact me
+        </h2>
+        <p class="contact__text">Want to reach out to me? Contact me at:</p>
+        <div class="flexbox-wrapper">
+          <ul class="media">
+            <li class="media__item">
+              <a href="https://github.com/kris-kozak"
+                ><img src="#" alt="alt"
+              /></a>
+            </li>
+            <li class="media__item">
+              <a href="https://github.com/kris-kozak"
+                ><img src="#" alt="alt"
+              /></a>
+            </li>
+            <li class="media__item">
+              <a href="https://github.com/kris-kozak"
+                ><img src="#" alt="alt"
+              /></a>
+            </li>
+          </ul>
+          <a class="hero__contact" href="mailto:krzysztofkoz6@gmail.com">
+            krzysztofkoz6@gmail.com
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
