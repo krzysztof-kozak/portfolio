@@ -1,0 +1,41 @@
+@import "variables";
+
+@mixin mobileHeaderLarge {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+%listDecoration {
+  &::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../assets/img/small-tick-green.svg);
+    width: 12px;
+    height: 9px;
+    margin: 0 10px 0.8px 0px;
+  }
+}
+
+@mixin greenTick {
+  @extend %listDecoration;
+}
+
+@mixin blueTick {
+  @extend %listDecoration;
+  &::before {
+    background-image: url(../assets/img/small-tick-light-blue.svg);
+  }
+}
+
+@mixin dot {
+  @extend %listDecoration;
+  &::before {
+    background: $blueLight;
+    width: 4px;
+    height: 4px;
+    margin-bottom: 3px;
+    color: $blueLight;
+    border-radius: 50%;
+  }
+}
