@@ -1,12 +1,12 @@
 {
-  "name": "WTF: PWA",
-  "short_name": "WTF: PWA",
+  "name": "Kris Dev Portfolio",
+  "short_name": "Portfolio",
   "theme_color": "#2D2241",
   "background_color": "#2D2241",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/wtf-webpack-starter/",
-  "start_url": "/wtf-webpack-starter/",
+  "scope": "/portfolio/",
+  "start_url": "/portfolio/",
   "icons": [
     {
       "src": "pwa/manifest-icon-192.png",
