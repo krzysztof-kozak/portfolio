@@ -1,0 +1,55 @@
+.hero {
+  padding: 48px 16px 0;
+  text-align: center;
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accent {
+    color: $blue;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $textLink;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  &__greeting {
+    display: none;
+  }
+
+  &__header {
+    color: $textDark;
+    font-size: 1.625rem;
+    line-height: 2rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    &:last-of-type {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__contact {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    background: $textLink;
+    border-radius: 64px;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+}

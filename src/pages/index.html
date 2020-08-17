@@ -20,24 +20,31 @@
   <body>
     <main>
       <section class="hero">
-        <img src="#" alt="Kris" class="hero__img" />
-        <span class="hero__greeting">Hiya 👋</span>
-        <h1 class="hero__header">
-          I'm Kris and I am programming bootcamp graduate with html, css,
-          <span class="accent">javascript</span> and
-          <span class="accent">react</span>.
-        </h1>
-        <p class="hero__text">
-          You might be interested in checking the list of my
-          <span class="accent">skills</span>. Don’t forget to have a glimpse at
-          my <span class="accent">project</span>. Currently I’m working as a
-          junior frontend dev but feel free to
-          <span class="accent">contact me</span> if you want to share a an
-          opportunity or just talk 😊
-        </p>
-        <a class="hero__contact" href="mailto:krzysztofkoz6@gmail.com"
-          >krzysztofkoz6@gmail.com</a
-        >
+        <div class="image-wrapper">
+          <img src="../assets/img/avatar.jpeg" alt="Kris" class="hero__img" />
+          <span class="hero__greeting">Hiya 👋</span>
+        </div>
+        <div class="text-wrapper">
+          <h1 class="hero__header">
+            My name is Kris and<br />
+            I'm a programming bootcamp graduate with
+            <span class="accent">javascript</span> and
+            <span class="accent">react</span>.
+          </h1>
+          <p class="hero__text">
+            You might be interested in checking the list of my
+            <a href="#skills" class="link">skills</a>. Don’t forget to have a
+            glimpse at my <a href="#projects" class="link">projects</a>.
+          </p>
+          <p class="hero__text">
+            I have recently started my first job as a junior frontend dev but feel free to
+            <a href="#contact" class="link">contact me</a> if you want to share
+            a an opportunity or just talk 😊
+          </p>
+          <a class="hero__contact" href="mailto:krzysztofkoz6@gmail.com"
+            >krzysztofkoz6@gmail.com</a
+          >
+        </div>
       </section>
 
       <section class="skills">
