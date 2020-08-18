@@ -1,10 +1,10 @@
-![cover](/public/img/logo.png)
+![cover](/public/img/logo.svg)
 
 # Portfolio
 
 A responsive Portofolio project. Go to [https://krzysztof-kozak.github.io/portfolio](https://krzysztof-kozak.github.io/portfolio/) and check it out.
 
-## How to use get the repo locall?
+## How to use get the repo locally?
 
 1. Clone the repository.
 2. Go to the project's folder.
