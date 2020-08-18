@@ -37,7 +37,8 @@
             glimpse at my <a href="#projects" class="link">projects</a>.
           </p>
           <p class="hero__text">
-            I have recently started my first job as a junior frontend dev but feel free to
+            I have recently started my first job as a junior frontend dev but
+            feel free to
             <a href="#contact" class="link">contact me</a> if you want to share
             a an opportunity or just talk 😊
           </p>
@@ -97,20 +98,44 @@
         </p>
         <div class="grid-container">
           <article class="project">
-            <h3 class="project__header">
-              <span>project:</span> <span>name</span>
-            </h3>
-            <p><span>description:</span> <span>text text text</span></p>
-            <p>
-              <span>demo:</span>
-              <span>&lt;<a href="#" title="name - demo">see_here</a>&gt; </span>
-            </p>
-            <p>
-              <span>github:</span>
-              <span>
-                &lt;<a href="#" title="github - sourcecode">source_code</a>&gt;
-              </span>
-            </p>
+            <div class="console-bar">
+              <span class="console-dot"></span>
+              <span class="console-dot"></span>
+              <span class="console-dot"></span>
+            </div>
+
+            <div class="project-wrapper">
+              <img src="../assets/img/github-icon.svg" alt="Github logo" />
+              <h3 class="project__header grid">
+                <span class="label">project:</span
+                ><span class="title">name</span>
+              </h3>
+              <p class="grid">
+                <span class="label">description:</span
+                ><span class="description"
+                  >podlaskie aliasy dla gitowych komend</span
+                >
+              </p>
+              <p class="grid">
+                <span class="label">demo:</span>
+                <span>
+                  &lt;<a class="project__link" href="#" title="name - demo"
+                    >see here</a
+                  >&gt;
+                </span>
+              </p>
+              <p class="grid">
+                <span class="label">github:</span>
+                <span>
+                  &lt;<a
+                    class="project__link"
+                    href="#"
+                    title="github - sourcecode"
+                    >source code</a
+                  >&gt;
+                </span>
+              </p>
+            </div>
           </article>
         </div>
       </section>

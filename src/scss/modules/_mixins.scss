@@ -6,6 +6,40 @@
   text-align: center;
 }
 
+@mixin mobileText {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@mixin consoleBar {
+  height: 40px;
+  background: $consoleGrey-1;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+@mixin consoleDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  background: $consoleGrey-3;
+  border-radius: 50%;
+  &:first-child {
+    margin-left: 16px;
+  }
+}
+
+@mixin consoleFont {
+  font-family: Roboto Mono;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 %listDecoration {
   &::before {
     content: "";
