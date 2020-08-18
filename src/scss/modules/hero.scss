@@ -1,0 +1,126 @@
+@import "./_mixins";
+
+@keyframes wave {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.hand {
+  animation: wave 0.3s linear alternate-reverse infinite;
+  display: inline-block;
+}
+
+.hero {
+  padding: 48px 16px 64px;
+  text-align: center;
+  @media (min-width: $deviceMedium) {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-wrapper {
+    @media (min-width: $deviceMedium) {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        background: url(../assets/img/left-bracket.svg);
+        background-size: cover;
+        width: 120px;
+        height: 350px;
+        position: absolute;
+        top: -2px;
+        left: -140px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: url(../assets/img/right-bracket.svg);
+        background-size: cover;
+        width: 120px;
+        height: 350px;
+        position: absolute;
+        top: -2px;
+        right: -140px;
+      }
+    }
+  }
+
+  .accent {
+    color: $blue;
+  }
+
+  .link {
+    text-decoration: none;
+    color: $textLink;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    @media (min-width: $deviceMedium) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &__greeting {
+    display: none;
+    @media (min-width: $deviceMedium) {
+      @include desktopHeaderMedium;
+      display: block;
+      color: #fff;
+      background: $blue;
+      border-radius: 16px;
+      padding: 16px 20px;
+      position: relative;
+      align-self: baseline;
+
+      &::after {
+        content: "";
+        background: url("../assets/img/speech-cloud.svg");
+        background-size: cover;
+        display: block;
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        top: 72px;
+        left: 30px;
+      }
+    }
+  }
+
+  &__header {
+    color: $textDark;
+    font-size: 1.625rem;
+    line-height: 2rem;
+    @media (min-width: $deviceMedium) {
+      @include desktopHeaderMedium;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    &:last-of-type {
+      margin-bottom: 2.4em;
+    }
+  }
+
+  &__contact {
+    @include contactLink;
+  }
+}

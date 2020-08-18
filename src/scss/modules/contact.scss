@@ -1,0 +1,54 @@
+.flexbox-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.contact-wrapper {
+  @media (min-width: $deviceMedium) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.875rem;
+  }
+}
+
+.contact {
+  background: $blueLight;
+  padding: 64px 16px 88px;
+  text-align: center;
+
+  &__header {
+    @include mobileHeaderLarge;
+    @media (min-width: $deviceMedium) {
+      @include desktopHeaderLarge;
+    }
+  }
+
+  &__text {
+    @include mobileText;
+    @media (min-width: $deviceMedium) {
+      @include text;
+    }
+  }
+
+  &__link {
+    @include contactLink;
+  }
+}
+
+.media {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  padding: 0;
+  justify-content: center;
+  gap: 3.5rem;
+  @media (min-width: $deviceMedium) {
+    margin: 0;
+  }
+
+  &__item {
+    width: 40px;
+  }
+}

@@ -1,18 +1,28 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](/public/img/logo.svg)
 
-# WTF Webpack Starter Kit 
+# Portfolio
 
-Simple toolkit for your static websites development.
+A responsive Portofolio project. Go to [https://krzysztof-kozak.github.io/portfolio](https://krzysztof-kozak.github.io/portfolio/) and check it out.
 
-## How to use it?
+## How to use get the repo locally?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+1. Clone the repository.
+2. Go to the project's folder.
+3. Instal dependencies.
+4. Run the app in the developement mode for dev preview.
 
-## Available scripts
+```
+git clone https://github.com/krzysztof-kozak/portfolio.git
 
-`npm run start` - runs development mode
+cd portfolio/
 
-`npm run build` - runs build process for production
+npm install
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+npm run start
+```
 
+### Development mode.
+
+`npm run start` runs the project in the development mode.<br />
+
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
