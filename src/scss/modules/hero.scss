@@ -1,9 +1,12 @@
 @import "./_mixins";
 
 .hero {
-  padding: 48px 16px 0;
+  padding: 48px 16px 64px;
   text-align: center;
-  margin-bottom: 3.5em;
+  @media (min-width: $deviceMedium) {
+    max-width: 580px;
+    margin: 0 auto;
+  }
 
   .image-wrapper {
     display: flex;

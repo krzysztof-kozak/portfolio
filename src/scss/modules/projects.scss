@@ -10,6 +10,12 @@
   padding: 24px 16px;
 }
 
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 .grid {
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -35,6 +41,9 @@
 
 .projects {
   padding: 64px 16px 88px;
+  padding: 64px 16px 88px;
+  max-width: 900px;
+  margin: 0 auto;
 
   &__header {
     @include mobileHeaderLarge;
@@ -49,7 +58,6 @@
 .project {
   @include consoleFont;
   box-shadow: (0px 4px 16px rgba(0, 0, 0, 0.25));
-  margin-bottom: 1.5em;
   background: $consoleGrey-2;
   border-radius: 1rem;
   overflow: hidden;
