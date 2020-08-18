@@ -46,6 +46,8 @@ fetch(API)
                       &lt;<a
                         class="project__link"
                         href="${html_url}"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         title="github - sourcecode"
                         >source code</a
                       >&gt;
