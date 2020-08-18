@@ -52,6 +52,9 @@
   &__text {
     @include mobileText;
     margin-bottom: 3rem;
+    @media (min-width: $deviceMedium) {
+      @include text;
+    }
   }
 }
 
@@ -62,10 +65,16 @@
   border-radius: 1rem;
   overflow: hidden;
   color: $consoleGrey-4;
+  @media (min-width: $deviceMedium) {
+    font-size: 1rem;
+  }
 
   &__header {
     font-weight: normal;
     font-size: 13px;
+    @media (min-width: $deviceMedium) {
+      font-size: 1rem;
+    }
   }
 
   &__link {
