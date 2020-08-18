@@ -2,27 +2,39 @@
 
 # Portfolio
 
-A responsive Portofolio project. Go to [https://krzysztof-kozak.github.io/portfolio](https://krzysztof-kozak.github.io/portfolio/) and check it out.
+This is my responsive Portfolio project. Go to [https://krzysztof-kozak.github.io/portfolio](https://krzysztof-kozak.github.io/portfolio/) and check it out.
 
-## How to use get the repo locally?
+---
 
-1. Clone the repository.
-2. Go to the project's folder.
-3. Instal dependencies.
-4. Run the app in the developement mode for dev preview.
+## About me
 
-```
-git clone https://github.com/krzysztof-kozak/portfolio.git
+![photo](https://krzysztof-kozak.github.io/portfolio/img/avatar.fdc454d8.jpeg "Kris's Photo")
 
-cd portfolio/
+I used to be a Service Delivery Coordinator in a corporation but decided to pursue programming as a career.
 
-npm install
+Now I'm a programming bootcamp graduate with html, css, **javascript** and **react**; who recently became a **frontend developer**.
 
-npm run start
-```
+My goal is keep learning frontend to become a better dev and to have fun :)
 
-### Development mode.
+---
 
-`npm run start` runs the project in the development mode.<br />
+## Tools & Technologies.
 
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+- HTML & CSS
+- Sass
+- Javascript / ES6 Features
+- React
+- Git & Github
+- Node.js
+- Webpack & Npm
+- Chrome / Firefox dev tools
+- Collaborating on a group project (AGILE, SCRUM)
+- Working with APIs
+
+---
+
+## Contact me
+
+> **LinkedIn:** [kriskozak/](https://www.linkedin.com/in/kriskozak/)
+>
+> **Email:** <krzysztofkoz6@gmail.com>
