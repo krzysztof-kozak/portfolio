@@ -1,5 +1,13 @@
 @import "./mixins";
 
+.article-wrapper {
+  @media (min-width: $deviceLarge) {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+}
+
 .skills {
   background: $blue;
   color: #fff;
@@ -8,6 +16,9 @@
   &__header {
     @include mobileHeaderLarge;
     color: #fff;
+    @media (min-width: $deviceMedium) {
+      @include desktopHeaderLarge;
+    }
   }
 }
 
@@ -37,7 +48,7 @@
   line-height: 1.5rem;
   width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding-left: 50px;
   list-style: none;
 
   &__item {

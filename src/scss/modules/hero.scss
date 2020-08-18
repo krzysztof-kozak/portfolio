@@ -4,7 +4,7 @@
   padding: 48px 16px 64px;
   text-align: center;
   @media (min-width: $deviceMedium) {
-    max-width: 580px;
+    max-width: 650px;
     margin: 0 auto;
   }
 
@@ -12,6 +12,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .text-wrapper {
+    @media (min-width: $deviceMedium) {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        background: url(../assets/img/left-bracket.svg);
+        background-size: cover;
+        width: 120px;
+        height: 350px;
+        position: absolute;
+        top: -2px;
+        left: -140px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: url(../assets/img/right-bracket.svg);
+        background-size: cover;
+        width: 120px;
+        height: 350px;
+        position: absolute;
+        top: -2px;
+        right: -140px;
+      }
+    }
   }
 
   .accent {
