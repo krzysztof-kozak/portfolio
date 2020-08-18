@@ -34,12 +34,10 @@
 }
 
 .projects {
-  padding: 64px 16px 0;
+  padding: 64px 16px 88px;
 
   &__header {
     @include mobileHeaderLarge;
-    color: $textDark;
-    margin: 4rem 0 2rem;
   }
 
   &__text {

@@ -1,9 +1,22 @@
 @import "variables";
 
+@mixin contactLink {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  background: $textLink;
+  border-radius: 64px;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
 @mixin mobileHeaderLarge {
   font-size: 2.25rem;
   line-height: 3rem;
   text-align: center;
+  color: $textDark;
+  margin: 0 0 2rem;
 }
 
 @mixin mobileText {
@@ -11,6 +24,7 @@
   font-size: 1rem;
   line-height: 2rem;
   text-align: center;
+  margin: 0 0 56px;
 }
 
 @mixin consoleBar {
