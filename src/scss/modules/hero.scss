@@ -27,16 +27,45 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    @media (min-width: $deviceMedium) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
   &__greeting {
     display: none;
+    @media (min-width: $deviceMedium) {
+      @include desktopHeaderMedium;
+      display: block;
+      color: #fff;
+      background: $blue;
+      border-radius: 16px;
+      padding: 16px 20px;
+      position: relative;
+      align-self: baseline;
+
+      &::after {
+        content: "";
+        background: url("../assets/img/speech-cloud.svg");
+        background-size: cover;
+        display: block;
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        top: 72px;
+        left: 30px;
+      }
+    }
   }
 
   &__header {
     color: $textDark;
     font-size: 1.625rem;
     line-height: 2rem;
+    @media (min-width: $deviceMedium) {
+      @include desktopHeaderMedium;
+    }
   }
 
   &__text {
