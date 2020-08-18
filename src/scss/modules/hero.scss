@@ -1,5 +1,19 @@
 @import "./_mixins";
 
+@keyframes wave {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.hand {
+  animation: wave 0.3s linear alternate-reverse infinite;
+  display: inline-block;
+}
+
 .hero {
   padding: 48px 16px 64px;
   text-align: center;
