@@ -1,4 +1,4 @@
-![cover](/public/img/logo.svg)
+![cover](/public/img/logo.png)
 
 # Portfolio
 
